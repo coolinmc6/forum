@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Pinterest-clone following the tutorial by [Mackenzie Child](https://mackenziechild.me/) in his
+[12-apps-in-12-weeks](https://mackenziechild.me/12-in-12/) series.  
+* The video for the tutorial is located here: [Week 8: How To Build A Forum With Rails 4](https://mackenziechild.me/12-in-12/10/) and on Youtube
+* Mackenzie's GitHub repo for this project is here: [forum](https://github.com/mackenziechild/forum)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
