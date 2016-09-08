@@ -1,8 +1,11 @@
 / index.html.haml
-%h1 Index.html.haml file
+%h1 The Forum
 
 - @posts.each do |post|
-	%h1= link_to (post.title), post
+	%h2= link_to (post.title), post
+	%strong Published:
+	=time_ago_in_words(post.created_at)
+	ago
 	%p= post.content
 
 = link_to "New Post", new_post_path
