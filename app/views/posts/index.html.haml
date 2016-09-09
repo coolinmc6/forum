@@ -1,11 +1,16 @@
 / index.html.haml
-%h1 The Forum
+#posts
+	- @posts.each do |post|
+		.post
+			%h2.title= link_to post.title, post
+			%p.date
+				Published at
+				= time_ago_in_words(post.created_at)
+				by
+				= post.user.email
+				or
+				= User.find(post.user_id).email
+			%p
+			= truncate(post.content, length: 250)
+			= link_to "read more", post
 
-- @posts.each do |post|
-	%h2= link_to (post.title), post
-	%strong Published:
-	=time_ago_in_words(post.created_at)
-	ago
-	%p= post.content
-
-= link_to "New Post", new_post_path
